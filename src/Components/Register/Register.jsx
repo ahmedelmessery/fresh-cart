@@ -60,7 +60,7 @@ export default function Register() {
 
     if (!values.password) {
       errors.password = "Password is Required";
-    } else if (!/^[A-Z][a-z0-9]{5,10}$/.test(values.password)) {
+    } else if (!/^[A-Za-z]\w{7,14}$/.test(values.password)) {
       errors.password = "Password must be difficult";
     } 
 
